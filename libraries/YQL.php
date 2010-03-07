@@ -402,7 +402,7 @@ class YQL_Core {
 	 */
 	public function query($statement = FALSE)
 	{
-		if ( ! $statement AND is_string($statement))
+		if (is_string($statement))
 			$this->query = $this->render_query($statement);
 
 		// Run the query and return the YQL_Iterator object
