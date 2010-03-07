@@ -8,3 +8,6 @@ $config['cache'] = FALSE;
 
 // Include diagnostics
 $config['diagnostics'] = TRUE;
+
+// Environment file to use for queries, if FALSE none used
+$config['environment'] = 'http://datatables.org/alltables.env';

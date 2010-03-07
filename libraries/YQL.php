@@ -543,6 +543,9 @@ class YQL_Core {
 		if ( ! $this->config['diagnostics'])
 			$formatted_query .= '&diagnostics=false';
 
+		if (is_string($this->config['environment']))
+			$formatted_query .= '&env=' . $this->config['environment'];
+
 		return $formatted_query;
 	}
 
