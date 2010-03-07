@@ -485,7 +485,7 @@ class YQL_Core {
 		if ($this->limit)
 		{
 			// Get the limit and offset
-			list($limit, $offset) = $this->limit;
+			extract($this->limit);
 
 			// L
 			if ($limit)
